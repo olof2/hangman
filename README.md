@@ -1,1 +1,2 @@
 # hangman
+### smaller text hangman
