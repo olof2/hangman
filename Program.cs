@@ -15,9 +15,25 @@ internal class Program
         }
 
         // *** gameloop
+        Console.WriteLine("game starts!")
         while (true)
         {
-            Console.WriteLine(guess);
+            Console.WriteLine(guess.ToString + ". Lives: " + lives.ToString);
+
+            // Fetch input
+            string? input = Console.ReadLine();
+
+            //validate input
+            if (input == null || input.Length == 0) {
+                Console.WriteLine("invalid input, try again")
+                continue;
+            }
+
+            char letter = input[0]
+            Console.WriteLine("you guessed " + letter)
+
+
+            break;
         }
 
         // *** end or exit
