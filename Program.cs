@@ -46,7 +46,7 @@ internal class Program
             }
             if (!correct) { lives--; };
 
-            if (lives == 0) { Console.WriteLine("you lost!"); break; }
+            if (lives == 0) { Console.WriteLine("out of lives! you lost!"); break; }
             if (secretWord == guess.ToString()) { Console.WriteLine("you won! you have " + lives + " lives left!"); break; }
         }
 
